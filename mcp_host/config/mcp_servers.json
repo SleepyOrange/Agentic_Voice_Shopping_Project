@@ -1,0 +1,44 @@
+{
+  "servers": {
+    "weather": {
+      "name": "Weather Server",
+      "description": "Provides weather data from OpenWeatherMap",
+      "command": "python",
+      "args": ["mcp_servers/weather/server.py"],
+      "cwd": null,
+      "enabled": true
+    },
+    "products": {
+      "name": "Products Server",
+      "description": "Product catalogue search and management",
+      "command": "python",
+      "args": ["mcp_servers/products/server.py"],
+      "cwd": null,
+      "enabled": true
+    },
+    "basket": {
+      "name": "Basket Server",
+      "description": "Shopping basket management",
+      "command": "python",
+      "args": ["mcp_servers/basket/server.py"],
+      "cwd": null,
+      "enabled": true
+    },
+    "orders": {
+      "name": "Orders Server",
+      "description": "Order placement and status tracking",
+      "command": "python",
+      "args": ["mcp_servers/orders/server.py"],
+      "cwd": null,
+      "enabled": true
+    },
+    "discounts": {
+      "name": "Discounts Server",
+      "description": "Discount codes and promotions",
+      "command": "python",
+      "args": ["mcp_servers/discounts/server.py"],
+      "cwd": null,
+      "enabled": true
+    }
+  }
+}
