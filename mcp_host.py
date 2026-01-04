@@ -20,7 +20,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 # Load environment variables
-load_dotenv(Path(__file__).parent / "WeatherAgent" / ".env")
+load_dotenv(Path(__file__).parent / "mcp_servers" / "weather" / ".env")
 
 
 class MCPHost:
@@ -102,9 +102,10 @@ class MCPHost:
         response = self.anthropic.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=4096,
-            system="""You are a helpful assistant with access to various tools through MCP servers.
+            system="""You are a helpful shopping assistant with access to various tools through MCP servers.
 Use the available tools to help answer user questions.
-When you need weather information, use the weather tools available to you.
+When you need weather information, use the weather tools.
+For e-commerce actions (showing products, adding to basket, checkout, placing orders, discounts), use the SFCC commerce tools.
 Always provide clear, helpful responses based on the tool results.""",
             tools=self.tools,
             messages=conversation_history,
@@ -135,9 +136,10 @@ Always provide clear, helpful responses based on the tool results.""",
             response = self.anthropic.messages.create(
                 model="claude-sonnet-4-20250514",
                 max_tokens=4096,
-                system="""You are a helpful assistant with access to various tools through MCP servers.
+                system="""You are a helpful shopping assistant with access to various tools through MCP servers.
 Use the available tools to help answer user questions.
-When you need weather information, use the weather tools available to you.
+When you need weather information, use the weather tools.
+For e-commerce actions (showing products, adding to basket, checkout, placing orders, discounts), use the SFCC commerce tools.
 Always provide clear, helpful responses based on the tool results.""",
                 tools=self.tools,
                 messages=conversation_history,
@@ -161,15 +163,25 @@ Always provide clear, helpful responses based on the tool results.""",
 async def main():
     """Main entry point for the MCP Host CLI."""
     host = MCPHost()
+    base_path = Path(__file__).parent
 
     try:
-        # Connect to the Weather Agent MCP server
-        weather_server_path = Path(__file__).parent / "WeatherAgent" / "weather_mcp_server.py"
+        # Connect to the Weather MCP server
+        weather_server_path = base_path / "mcp_servers" / "weather" / "weather_mcp_server.py"
         await host.connect_to_server(
             name="weather",
             command=sys.executable,  # Use the current Python interpreter
             args=[str(weather_server_path)],
-            cwd=str(Path(__file__).parent / "WeatherAgent"),
+            cwd=str(base_path / "mcp_servers" / "weather"),
+        )
+
+        # Connect to the SFCC Commerce MCP server
+        sfcc_server_path = base_path / "mcp_servers" / "sfcc" / "sfcc_mcp_server.py"
+        await host.connect_to_server(
+            name="sfcc",
+            command=sys.executable,
+            args=[str(sfcc_server_path)],
+            cwd=str(base_path / "mcp_servers" / "sfcc"),
         )
 
         print("\n" + "=" * 50)
