@@ -56,12 +56,22 @@
 
     "apply_discount": {
       "name": "Apply Discount",
-      "description": "Apply discount codes or promotional offers",
-      "system_prompt": "You can apply discount codes to the basket.\n\nGuidelines:\n- Accept discount codes from users\n- Validate the code using the tool\n- If valid: Show original price, discount amount, and new total\n- If invalid: Politely explain and offer to check for other promotions\n- Only one discount code per order (unless tool supports stacking)\n- Proactively mention if items qualify for bundle discounts\n\nResponse format:\n- Success: 'Code [CODE] applied! You saved £X.XX. New total: £Y.YY'\n- Failure: 'Sorry, that code isn't valid. Would you like me to check for current promotions?'",
+      "description": "Apply discount codes or promotional offers - proactively offer when customer finds product too expensive",
+      "system_prompt": "You can apply discount codes and proactively offer promotions when customers express price concerns.\n\nTriggers to PROACTIVELY offer discounts (before adding to cart):\n- Customer says product is 'too expensive', 'pricey', 'out of my budget'\n- Customer hesitates after hearing the price\n- Customer asks 'is that the best price?' or 'any discounts?'\n- Customer compares to cheaper alternatives\n\nProactive offer workflow:\n1. Acknowledge their concern: 'I understand, let me check what we can do'\n2. Check available promotions using `get_promotions`\n3. Offer applicable discount: 'Good news! We have a code CAMP20 for 20% off'\n4. Show the discounted price BEFORE they add to cart\n5. If no discounts available, suggest budget-friendly alternatives\n\nGuidelines:\n- ALWAYS check for discounts when customer expresses price concern\n- Present discounted price alongside original: '£200 becomes £160 with code CAMP20'\n- If valid: Show original price, discount amount, and new price\n- If invalid: Politely explain and offer to check for other promotions\n- Only one discount code per order (unless tool supports stacking)\n\nResponse format:\n- Price concern: 'I hear you - let me check for any offers... Great news! Code CAMP20 gives you 20% off, bringing it down to £X.XX'\n- Success: 'Code [CODE] applied! You saved £X.XX. New total: £Y.YY'\n- No discounts: 'Unfortunately no discounts apply to this item, but I can show you some alternatives under £X'",
+      "triggers": [
+        "Customer says 'too expensive' or 'too pricey'",
+        "Customer says 'out of my budget' or 'can't afford'",
+        "Customer asks 'any discounts?' or 'best price?'",
+        "Customer hesitates or pauses after hearing price",
+        "Customer mentions budget constraints"
+      ],
       "example_queries": [
+        "That's a bit expensive",
+        "Is there a discount on that?",
         "I have a discount code: CAMP20",
+        "That's out of my budget",
         "Are there any offers available?",
-        "Apply my member discount"
+        "Can you do any better on price?"
       ],
       "tools_required": ["discounts__apply_discount", "discounts__get_promotions", "discounts__validate_code"]
     },
