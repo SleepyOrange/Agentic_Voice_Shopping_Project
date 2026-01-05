@@ -1,3 +1,4 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-/opt/homebrew/bin/python3.11 mcp_host.py
+source venv/bin/activate
+python -m mcp_host.main

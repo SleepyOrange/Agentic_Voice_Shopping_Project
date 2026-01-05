@@ -10,8 +10,13 @@ import asyncio
 import sys
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Load environment variables from project root
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 from mcp_host.core import MCPHost
 

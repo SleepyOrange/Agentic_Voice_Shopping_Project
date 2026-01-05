@@ -3,7 +3,7 @@
     "weather": {
       "name": "Weather Server",
       "description": "Provides weather data from OpenWeatherMap",
-      "command": "/opt/homebrew/bin/python3.11",
+      "command": "python",
       "args": ["mcp_servers/weather/weather_mcp_server.py"],
       "cwd": null,
       "enabled": true
@@ -11,7 +11,7 @@
     "sfcc": {
       "name": "SFCC Commerce Server",
       "description": "Salesforce Commerce Cloud integration - product navigation, basket, checkout, orders, and discounts",
-      "command": "/opt/homebrew/bin/python3.11",
+      "command": "python",
       "args": ["mcp_servers/sfcc/sfcc_mcp_server.py"],
       "cwd": null,
       "enabled": true
