@@ -1,0 +1,162 @@
+{
+  "catalog_name": "Camping Gear 2025",
+  "currency": "GBP",
+  "currency_symbol": "£",
+
+  "products": [
+    {
+      "id": "T100",
+      "name": "Summit Seeker 2-Person Tent",
+      "description": "Lightweight and durable tent for backpacking. Quick setup, waterproof fly. Perfect for mild to moderate weather conditions.",
+      "image_url": "https://placehold.co/300x200/50C878/white?text=Tent+2P",
+      "price": 200.00
+    },
+    {
+      "id": "T104",
+      "name": "Family Basecamp 6-Person Tent",
+      "description": "Large, multi-room tent with standing height and ventilation. Ideal for family holidays and long stays.",
+      "image_url": "https://placehold.co/300x200/50C878/white?text=Tent+6P",
+      "price": 450.00
+    },
+    {
+      "id": "T108",
+      "name": "Ultra-Light Bivy Sack",
+      "description": "Minimalist, waterproof shelter for solo fast-and-light adventures. Extremely packable.",
+      "image_url": "https://placehold.co/300x200/50C878/white?text=Bivy+Sack",
+      "price": 120.00
+    },
+    {
+      "id": "S201",
+      "name": "Cozy Cloud 20F Sleeping Bag",
+      "description": "Ultralight mummy sleeping bag, rated for 20°F (-7°C). Synthetic insulation, compressible stuff sack included. Great for spring and fall camping.",
+      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Cold",
+      "price": 150.00
+    },
+    {
+      "id": "S202",
+      "name": "Summer Breeze Sleeping Bag",
+      "description": "Rectangular sleeping bag rated for 40°F (4°C). Cotton lining, machine washable. Perfect for car camping and summer nights.",
+      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Warm",
+      "price": 65.00
+    },
+    {
+      "id": "S205",
+      "name": "Double-Wide Sleeping Bag",
+      "description": "Extra-large sleeping bag for two adults. Fleece lined for ultimate comfort. Ideal for couples.",
+      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Double",
+      "price": 220.00
+    },
+    {
+      "id": "P010",
+      "name": "Inflatable Sleeping Pad",
+      "description": "Insulated and comfortable sleeping pad. R-Value of 4.2 for three-season use.",
+      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Pad",
+      "price": 95.00
+    },
+    {
+      "id": "B305",
+      "name": "Trailblazer 60L Backpack",
+      "description": "High-capacity hiking backpack with adjustable frame and multiple compartments. Hydration bladder compatible. Ideal for multi-day treks.",
+      "image_url": "https://placehold.co/300x200/3A534B/white?text=Backpack+60L",
+      "price": 180.00
+    },
+    {
+      "id": "B310",
+      "name": "Day Hiker 25L Pack",
+      "description": "Compact day pack for essentials, with external gear loops and airflow back panel.",
+      "image_url": "https://placehold.co/300x200/3A534B/white?text=Backpack+25L",
+      "price": 55.00
+    },
+    {
+      "id": "H402",
+      "name": "Portable Camp Stove (Propane)",
+      "description": "Compact and efficient propane stove with adjustable flame. Boils water in minutes. Essential for cooking meals in the backcountry.",
+      "image_url": "https://placehold.co/300x200/778899/white?text=Camp+Stove",
+      "price": 75.00
+    },
+    {
+      "id": "H403",
+      "name": "Ultralight Titanium Cook Pot",
+      "description": "Single-person titanium cooking pot and lid. Extremely light, perfect for minimalist backpacking.",
+      "image_url": "https://placehold.co/300x200/778899/white?text=Titanium+Pot",
+      "price": 45.00
+    },
+    {
+      "id": "H405",
+      "name": "Complete Camp Cookware Set",
+      "description": "Non-stick pots, pans, and utensils for group camping. Includes carrying bag.",
+      "image_url": "https://placehold.co/300x200/778899/white?text=Cookware+Set",
+      "price": 110.00
+    },
+    {
+      "id": "L503",
+      "name": "Rechargeable LED Lantern",
+      "description": "Bright and long-lasting LED lantern with adjustable brightness settings. USB rechargeable. Perfect for illuminating your camp.",
+      "image_url": "https://placehold.co/300x200/808080/white?text=LED+Lantern",
+      "price": 40.00
+    },
+    {
+      "id": "L504",
+      "name": "Headlamp Pro 500 Lumen",
+      "description": "High-power waterproof headlamp with multiple modes (red light, strobe, focused beam).",
+      "image_url": "https://placehold.co/300x200/808080/white?text=Headlamp",
+      "price": 35.00
+    },
+    {
+      "id": "C601",
+      "name": "Folding Camp Chair Deluxe",
+      "description": "Padded, oversized folding chair with cup holder and side pocket. Max weight 150kg.",
+      "image_url": "https://placehold.co/300x200/90B0D0/white?text=Camp+Chair",
+      "price": 50.00
+    },
+    {
+      "id": "C602",
+      "name": "Portable Hammock Single",
+      "description": "Lightweight nylon hammock with carabiners and tree straps included. Ideal for relaxation.",
+      "image_url": "https://placehold.co/300x200/90B0D0/white?text=Hammock",
+      "price": 45.00
+    },
+    {
+      "id": "F701",
+      "name": "Fire Starter Kit (Ferro Rod)",
+      "description": "Reliable waterproof fire starting tool, includes striker and tinder bundle. Essential safety gear.",
+      "image_url": "https://placehold.co/300x200/A0A0A0/white?text=Fire+Starter",
+      "price": 20.00
+    },
+    {
+      "id": "F702",
+      "name": "Biodegradable Camp Soap",
+      "description": "Concentrated multi-use soap for dishes, hands, and laundry. Safe for use outdoors.",
+      "image_url": "https://placehold.co/300x200/A0A0A0/white?text=Camp+Soap",
+      "price": 15.00
+    },
+    {
+      "id": "W801",
+      "name": "Water Filter Pump System",
+      "description": "High-flow pump filter system removes bacteria and protozoa. Suitable for multiple users.",
+      "image_url": "https://placehold.co/300x200/87CEEB/white?text=Water+Filter",
+      "price": 85.00
+    },
+    {
+      "id": "W802",
+      "name": "Collapsible Water Carrier 10L",
+      "description": "Durable folding container for carrying and storing water at the campsite.",
+      "image_url": "https://placehold.co/300x200/87CEEB/white?text=Water+Carrier",
+      "price": 25.00
+    },
+    {
+      "id": "A901",
+      "name": "First Aid Kit Pro",
+      "description": "Comprehensive kit covering trauma, minor injuries, and common ailments. Suitable for multi-day trips.",
+      "image_url": "https://placehold.co/300x200/FF5733/white?text=First+Aid+Kit",
+      "price": 40.00
+    },
+    {
+      "id": "A902",
+      "name": "Sun Shelter Tarp",
+      "description": "Lightweight polyester tarp for sun and rain protection. Includes stakes and cord.",
+      "image_url": "https://placehold.co/300x200/FF5733/white?text=Sun+Tarp",
+      "price": 70.00
+    }
+  ]
+}
