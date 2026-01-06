@@ -2,161 +2,92 @@
   "catalog_name": "Camping Gear 2025",
   "currency": "GBP",
   "currency_symbol": "£",
+  "storefront_base_url": "https://zzse-222.dx.commercecloud.salesforce.com",
 
   "products": [
     {
-      "id": "T100",
+      "id": "4070004AR9",
       "name": "Summit Seeker 2-Person Tent",
       "description": "Lightweight and durable tent for backpacking. Quick setup, waterproof fly. Perfect for mild to moderate weather conditions.",
-      "image_url": "https://placehold.co/300x200/50C878/white?text=Tent+2P",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/2-meter-dome-4070004AR9.html",
       "price": 200.00
     },
     {
-      "id": "T104",
+      "id": "4070028AAX",
       "name": "Family Basecamp 6-Person Tent",
       "description": "Large, multi-room tent with standing height and ventilation. Ideal for family holidays and long stays.",
-      "image_url": "https://placehold.co/300x200/50C878/white?text=Tent+6P",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/kaiju-6-4070028AAX.html",
       "price": 450.00
     },
     {
-      "id": "T108",
+      "id": "4070384BB3",
       "name": "Ultra-Light Bivy Sack",
       "description": "Minimalist, waterproof shelter for solo fast-and-light adventures. Extremely packable.",
-      "image_url": "https://placehold.co/300x200/50C878/white?text=Bivy+Sack",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/assault-bivy-4070384BB3.html",
       "price": 120.00
     },
     {
-      "id": "S201",
+      "id": "4090373AMR",
       "name": "Cozy Cloud 20F Sleeping Bag",
       "description": "Ultralight mummy sleeping bag, rated for 20°F (-7°C). Synthetic insulation, compressible stuff sack included. Great for spring and fall camping.",
-      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Cold",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/dolomite-double-20f--7c-4090373AMR.html",
       "price": 150.00
     },
     {
-      "id": "S202",
+      "id": "4090154AKQ",
       "name": "Summer Breeze Sleeping Bag",
       "description": "Rectangular sleeping bag rated for 40°F (4°C). Cotton lining, machine washable. Perfect for car camping and summer nights.",
-      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Warm",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/aleutian-55-13-4090154AKQ.html",
       "price": 65.00
     },
     {
-      "id": "S205",
+      "id": "4090372AMP",
       "name": "Double-Wide Sleeping Bag",
       "description": "Extra-large sleeping bag for two adults. Fleece lined for ultimate comfort. Ideal for couples.",
-      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Bag+Double",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/dolomite-double-down-20f--7c-4090372AMP.html",
       "price": 220.00
     },
     {
-      "id": "P010",
-      "name": "Inflatable Sleeping Pad",
-      "description": "Insulated and comfortable sleeping pad. R-Value of 4.2 for three-season use.",
-      "image_url": "https://placehold.co/300x200/40964D/white?text=Sleeping+Pad",
-      "price": 95.00
+      "id": "4070389AA3",
+      "name": "Footprint Alpine Guide 2",
+      "description": "Footprints shield your tent floor from the cooler—and sometimes wet or abrasive—ground, prolonging the life of the tent floor. You can also use them in fly-only pitching with most models.",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/footprint-alpine-guide-2-4070389AA3.html",
+      "price": 44.95
     },
     {
-      "id": "B305",
-      "name": "Trailblazer 60L Backpack",
-      "description": "High-capacity hiking backpack with adjustable frame and multiple compartments. Hydration bladder compatible. Ideal for multi-day treks.",
-      "image_url": "https://placehold.co/300x200/3A534B/white?text=Backpack+60L",
-      "price": 180.00
+      "id": "1050406ADA",
+      "name": "Men's Radical Agile Mid NTO-tech",
+      "description": "Prevail over Mount Hood with panache in these women's half crampon-compatible mountaineering boots with a waterproof NTO-tech membrane that deliver excellent traction on challenging, mixed terrain.",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/men%27s-radical-agile-mid-nto-tech-1050406ADA.html",
+      "price": 350.00
     },
     {
-      "id": "B310",
-      "name": "Day Hiker 25L Pack",
-      "description": "Compact day pack for essentials, with external gear loops and airflow back panel.",
-      "image_url": "https://placehold.co/300x200/3A534B/white?text=Backpack+25L",
-      "price": 55.00
-    },
-    {
-      "id": "H402",
-      "name": "Portable Camp Stove (Propane)",
-      "description": "Compact and efficient propane stove with adjustable flame. Boils water in minutes. Essential for cooking meals in the backcountry.",
-      "image_url": "https://placehold.co/300x200/778899/white?text=Camp+Stove",
-      "price": 75.00
-    },
-    {
-      "id": "H403",
-      "name": "Ultralight Titanium Cook Pot",
+      "id": "2050014AET",
+      "name": "Women's Verto S4k NTO-tech Boots",
       "description": "Single-person titanium cooking pot and lid. Extremely light, perfect for minimalist backpacking.",
-      "image_url": "https://placehold.co/300x200/778899/white?text=Titanium+Pot",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/women%27s-verto-s4k-nto-tech-boots-2050014AET.html",
       "price": 45.00
     },
     {
-      "id": "H405",
-      "name": "Complete Camp Cookware Set",
-      "description": "Non-stick pots, pans, and utensils for group camping. Includes carrying bag.",
-      "image_url": "https://placehold.co/300x200/778899/white?text=Cookware+Set",
-      "price": 110.00
+      "id": "4100106ASJ",
+      "name": "Fovero 70",
+      "description": "Don't leave anything at home during your next extended stay in the backcountry with this 70-liter technical pack that's designed for exceptional load management and organization of up to 70 pounds of gear.",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/fovero-70-4100106ASJ.html",
+      "price": 289.95
     },
     {
-      "id": "L503",
-      "name": "Rechargeable LED Lantern",
-      "description": "Bright and long-lasting LED lantern with adjustable brightness settings. USB rechargeable. Perfect for illuminating your camp.",
-      "image_url": "https://placehold.co/300x200/808080/white?text=LED+Lantern",
-      "price": 40.00
+      "id": "4060167BKL",
+      "name": "Homestead Roadsoda Pack",
+      "description": "A camp necessity, this waterproof, 43-liter backpack with an origami construction and a roll-top closure transforms into a rugged cooler when you add ice and a six pack. A 9-hook closure even doubles as a bottle opener.",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/homestead-roadsoda-pack-4060167BKL.html",
+      "price": 100.00
     },
     {
-      "id": "L504",
-      "name": "Headlamp Pro 500 Lumen",
-      "description": "High-power waterproof headlamp with multiple modes (red light, strobe, focused beam).",
-      "image_url": "https://placehold.co/300x200/808080/white?text=Headlamp",
+      "id": "2040140AKV",
+      "name": "Sun Shield Ball Cap",
+      "description": "Protect your face and neck from the sun while hiking or climbing with this dynamic ball cap, purpose-built with a longer brim and detachable cape for maximum coverage. Durable Quick-Dry nylon dries quickly and delivers Ultraviolet Protection Factor (UPF) of 50, Max weight 150kg.",
+      "url": "https://zzse-222.dx.commercecloud.salesforce.com/s/nto/default/sun-shield-ball-cap-2040140AKV.html",
       "price": 35.00
-    },
-    {
-      "id": "C601",
-      "name": "Folding Camp Chair Deluxe",
-      "description": "Padded, oversized folding chair with cup holder and side pocket. Max weight 150kg.",
-      "image_url": "https://placehold.co/300x200/90B0D0/white?text=Camp+Chair",
-      "price": 50.00
-    },
-    {
-      "id": "C602",
-      "name": "Portable Hammock Single",
-      "description": "Lightweight nylon hammock with carabiners and tree straps included. Ideal for relaxation.",
-      "image_url": "https://placehold.co/300x200/90B0D0/white?text=Hammock",
-      "price": 45.00
-    },
-    {
-      "id": "F701",
-      "name": "Fire Starter Kit (Ferro Rod)",
-      "description": "Reliable waterproof fire starting tool, includes striker and tinder bundle. Essential safety gear.",
-      "image_url": "https://placehold.co/300x200/A0A0A0/white?text=Fire+Starter",
-      "price": 20.00
-    },
-    {
-      "id": "F702",
-      "name": "Biodegradable Camp Soap",
-      "description": "Concentrated multi-use soap for dishes, hands, and laundry. Safe for use outdoors.",
-      "image_url": "https://placehold.co/300x200/A0A0A0/white?text=Camp+Soap",
-      "price": 15.00
-    },
-    {
-      "id": "W801",
-      "name": "Water Filter Pump System",
-      "description": "High-flow pump filter system removes bacteria and protozoa. Suitable for multiple users.",
-      "image_url": "https://placehold.co/300x200/87CEEB/white?text=Water+Filter",
-      "price": 85.00
-    },
-    {
-      "id": "W802",
-      "name": "Collapsible Water Carrier 10L",
-      "description": "Durable folding container for carrying and storing water at the campsite.",
-      "image_url": "https://placehold.co/300x200/87CEEB/white?text=Water+Carrier",
-      "price": 25.00
-    },
-    {
-      "id": "A901",
-      "name": "First Aid Kit Pro",
-      "description": "Comprehensive kit covering trauma, minor injuries, and common ailments. Suitable for multi-day trips.",
-      "image_url": "https://placehold.co/300x200/FF5733/white?text=First+Aid+Kit",
-      "price": 40.00
-    },
-    {
-      "id": "A902",
-      "name": "Sun Shelter Tarp",
-      "description": "Lightweight polyester tarp for sun and rain protection. Includes stakes and cord.",
-      "image_url": "https://placehold.co/300x200/FF5733/white?text=Sun+Tarp",
-      "price": 70.00
     }
   ]
 }
