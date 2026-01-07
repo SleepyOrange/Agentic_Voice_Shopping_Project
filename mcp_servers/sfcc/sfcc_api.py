@@ -94,66 +94,21 @@ class SFCCAPI:
 
     def submit_payment(
         self,
-        first_name: str,
-        last_name: str,
-        address1: str,
-        city: str,
-        postal_code: str,
-        country: str,
-        state_code: str,
-        phone: str,
-        card_type: str,
-        card_number: str,
-        card_owner: str,
-        exp_month: str,
-        exp_year: str,
         security_code: str,
-        address2: str = "",
-        save_card: bool = True,
         user_id: Optional[str] = None,
     ) -> dict:
         """
-        Submit payment and place order.
+        Submit payment and place order. Customer details are already on the checkout page.
 
         Args:
-            first_name: Customer first name
-            last_name: Customer last name
-            address1: Primary address line
-            city: City
-            postal_code: Postal/ZIP code
-            country: Country code (e.g., 'US')
-            state_code: State code (e.g., 'AK')
-            phone: Phone number
-            card_type: Card type (e.g., 'Visa', 'Mastercard')
-            card_number: Card number
-            card_owner: Name on card
-            exp_month: Expiration month
-            exp_year: Expiration year
-            security_code: CVV/security code
-            address2: Secondary address line (optional)
-            save_card: Whether to save card for future use
+            security_code: CVV/security code from customer's card
             user_id: Customer ID (defaults to configured user)
         """
         return self._notify(
             user_id or self.default_user_id,
             "SUBMIT_PAYMENT",
             {
-                "firstName": first_name,
-                "lastName": last_name,
-                "address1": address1,
-                "address2": address2,
-                "city": city,
-                "postalCode": postal_code,
-                "country": country,
-                "stateCode": state_code,
-                "phone": phone,
-                "cardType": card_type,
-                "cardNumber": card_number,
-                "cardOwner": card_owner,
-                "expMonth": exp_month,
-                "expYear": exp_year,
                 "securityCode": security_code,
-                "saveCard": save_card,
             },
         )
 
