@@ -32,12 +32,12 @@ async def main():
         await host.connect_all_servers(project_root)
 
         print("\n" + "=" * 50)
-        print("  Voice Shopping Agent Ready!")
+        print("  NTO Voice Shopping Agent Ready!")
         print("=" * 50)
         print(f"Connected servers: {list(host.sessions.keys())}")
         print(f"Available tools: {len(host.tools)}")
         print("=" * 50)
-        print("\nHow can I help you find camping gear today?")
+        print("\nWelcome to NTO! How can I help you today?")
         print("Type 'quit' to exit, 'reset' to clear session.\n")
 
         while True:
