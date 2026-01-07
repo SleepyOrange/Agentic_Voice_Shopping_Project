@@ -28,6 +28,9 @@
         "camping_gear": "/s/nto/default/gear-camping",
         "tents": "/s/nto/default/gear-camping-tents",
         "hiking_hats": "/s/nto/default/men-accessories-hats/hiking"
+        "footwear": "/s/nto/default/shoes"
+        "backpacks": "/s/nto/default/gear-bags-backpacks"
+        
       },
       "tool_parameters": {
         "text": "Message for the banner (e.g., 'Here are our camping tents')",
