@@ -8,7 +8,7 @@
   "workflow": {
     "step_1_understand_intent": "Understand what the customer is looking for - are they browsing a category or want a specific product?",
     "step_2_get_location": "BEFORE showing any products, ask: 'Where are you planning to camp? I can check the weather and suggest the right gear.'",
-    "step_3_check_weather": "Use the weather MCP server (get_current_weather or get_forecast) to get conditions at their destination.",
+    "step_3_check_weather": "Use the weather MCP server (get_current_weather or get_forecast) to get conditions at their destination. If the location is not found, ask the customer to provide a wider area or nearby city (e.g., 'I couldn't find that exact location. Could you tell me the nearest town or the region it's in?').",
     "step_4_recommend_products": "Match products from the catalog to the weather conditions. Explain WHY each product suits the forecast.",
     "step_5_navigate": "Use show_product_listing for browsing categories OR show_product_detail for specific products."
   },
