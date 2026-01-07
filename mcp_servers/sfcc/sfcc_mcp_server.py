@@ -108,70 +108,29 @@ def start_checkout(user_id: str = "cust:00000001") -> str:
 
 @mcp.tool()
 def place_order(
-    first_name: str,
-    last_name: str,
-    address1: str,
-    city: str,
-    postal_code: str,
-    country: str,
-    state_code: str,
-    phone: str,
-    card_type: str,
-    card_number: str,
-    card_owner: str,
-    exp_month: str,
-    exp_year: str,
     security_code: str,
-    address2: str = "",
-    save_card: bool = True,
     user_id: str = "cust:00000001",
 ) -> str:
     """
-    Submit payment and place the order.
+    Submit payment and place the order. Customer details are already on the page.
+    After successful order, navigates to the order confirmation page.
 
     Args:
-        first_name: Customer first name
-        last_name: Customer last name
-        address1: Primary address line
-        city: City name
-        postal_code: Postal/ZIP code
-        country: Country code (e.g., 'US')
-        state_code: State code (e.g., 'AK', 'CA', 'NY')
-        phone: Phone number
-        card_type: Card type ('Visa', 'Mastercard', 'Amex')
-        card_number: Credit card number
-        card_owner: Name as it appears on card
-        exp_month: Card expiration month (e.g., '1', '12')
-        exp_year: Card expiration year (e.g., '2031')
-        security_code: CVV/security code
-        address2: Secondary address line (optional)
-        save_card: Whether to save card for future purchases (defaults to True)
+        security_code: CVV/security code from the customer's card
         user_id: Customer ID (defaults to 'cust:00000001')
 
     Returns:
-        Confirmation of the order placement
+        Confirmation of the order placement with navigation to confirmation page
     """
     try:
         result = sfcc_api.submit_payment(
-            first_name=first_name,
-            last_name=last_name,
-            address1=address1,
-            address2=address2,
-            city=city,
-            postal_code=postal_code,
-            country=country,
-            state_code=state_code,
-            phone=phone,
-            card_type=card_type,
-            card_number=card_number,
-            card_owner=card_owner,
-            exp_month=exp_month,
-            exp_year=exp_year,
             security_code=security_code,
-            save_card=save_card,
             user_id=user_id,
         )
-        return json.dumps({"action": "place_order", "customer": f"{first_name} {last_name}", **result})
+        # Navigate to order confirmation page
+        confirmation_url = "/s/nto/default/order/confirmation"
+        sfcc_api.show_pdp("Your order has been placed!", confirmation_url, user_id)
+        return json.dumps({"action": "place_order", "navigate_to": confirmation_url, **result})
     except Exception as e:
         logger.error(f"Error placing order: {e}")
         return json.dumps({"error": str(e)})

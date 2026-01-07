@@ -83,14 +83,17 @@
 
     "place_order": {
       "name": "Place Order",
-      "description": "Complete the order with payment and shipping details",
+      "description": "Complete the order - customer details are already on the page, only CVV needed",
       "tool": "place_order",
       "when_to_use": [
-        "Customer has confirmed basket contents",
-        "Customer has provided shipping and payment details",
-        "Customer confirms they want to complete the purchase"
+        "Customer says 'place my order'",
+        "Customer confirms they want to complete the purchase",
+        "Customer has provided their CVV code"
       ],
-      "required_info": ["first_name", "last_name", "address", "city", "postal_code", "country", "phone", "card details"]
+      "tool_parameters": {
+        "security_code": "The 3-digit CVV code from the back of the customer's card"
+      },
+      "response_flow": "Ask customer for their CVV code, then place the order and confirm success"
     },
 
     "offer_discount": {
